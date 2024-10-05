@@ -1,0 +1,18 @@
+<template lang="pug">
+  div
+    header-bar
+    h1 day la hetader
+</template>
+
+<script lang="ts">
+import HeaderBar from "@/components/HeaderBar/index.vue";
+const Home ={
+  components: {
+    HeaderBar
+  }
+}
+
+export default Home
+</script>
+
+<style lang="scss"></style>
