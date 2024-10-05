@@ -1,0 +1,27 @@
+<template lang="pug">
+  v-carousel(height="300" )
+    v-carousel-item(v-for="(image, i) in images" :key="i" :src="image" reverse-transition="fade-transition" transition="fade-transition")
+
+</template>
+
+
+<script lang="ts">
+const Carousel ={
+  data (){
+    return {
+      images:[
+        'https://t3.ftcdn.net/jpg/04/65/46/52/360_F_465465254_1pN9MGrA831idD6zIBL7q8rnZZpUCQTy.jpg',
+        'https://giuongbenhchinhhang.vn/wp-content/uploads/2023/12/BANNER-BAN-HANG-NOEL-3-09.png',
+        'https://intmt.vn/wp-content/uploads/2018/04/BANNER-MARKTING3-03_2.jpg'
+      ]
+    }
+  }
+}
+export default Carousel
+</script>
+
+
+
+<style scoped lang="sass">
+
+</style>
