@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-carousel(height="300" )
+  v-carousel(:height="isMobile ? 150 : 300" )
     v-carousel-item(v-for="(image, i) in images" :key="i" :src="image" reverse-transition="fade-transition" transition="fade-transition")
 
 </template>
@@ -7,6 +7,7 @@
 
 <script lang="ts">
 const Carousel ={
+  props: ['isMobile'],
   data (){
     return {
       images:[
